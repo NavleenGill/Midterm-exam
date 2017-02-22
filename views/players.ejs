@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <!--Bootstrap for css -->
+  <link rel="stylesheet" href="/stylesheets/bootstrap.min.css" />
+  <link rel="stylesheet" href="/stylesheets/bootstrap-theme.min.css" />
+</head>
+<body>
+<h1>Players</h1>
+<table class="table table-striped table-hover">
+  <tr><th>First Name</th><th>Last Name</th><th>Number</th></tr>
+    <% for (var i = 0; i < players.length; i++) { %>
+  <tr>
+    <td><%= players[i].firstName %></td>
+    <td><%= players[i].lastName %></td>
+    <td><%= players[i].number %></td>
+  </tr>
+    <%  } %>
+</table>
+</body>
+</html>
+
